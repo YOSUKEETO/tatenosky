@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スマホでも目立つボタン</title>
+  <style>
+    @keyframes glow {
+      0% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.4); }
+      50% { box-shadow: 0 0 50px rgba(0, 123, 255, 0.9); } /* 光る範囲を大きく */
+      100% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.4); }
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(45deg, #007bff, #0056b3); /* 青系グラデーション */
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(0, 123, 255, 0.5);
+      transition: all 0.3s ease;
+      animation: glow 1.5s infinite alternate; /* じんわり光る範囲を大きく */
+    }
+
+    .cta-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 60px rgba(0, 123, 255, 1); /* ホバー時さらに光る */
+      background: linear-gradient(45deg, #0056b3, #004494);
+    }
+  </style>
+</head>
+<body>
+  <a href="https://sites.google.com/view/tatenosky-pta/katudou/kougaisidou" class="cta-button" target="_blank">📖 詳しい授業レポートはこちら＞＞</a>
+</body>
+</html>
