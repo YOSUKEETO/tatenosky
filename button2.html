@@ -3,20 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>上下に動くボタン</title>
+  <title>スマホでも目立つボタン</title>
   <style>
-    /* じんわり光るアニメーション */
     @keyframes glow {
       0% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.4); }
-      50% { box-shadow: 0 0 50px rgba(0, 123, 255, 0.9); }
+      50% { box-shadow: 0 0 50px rgba(0, 123, 255, 0.9); } /* 光る範囲を大きく */
       100% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.4); }
-    }
-
-    /* 上下に動くアニメーション */
-    @keyframes moveUpDown {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-10px); } /* 上に浮く */
-      100% { transform: translateY(0); }
     }
 
     .cta-button {
@@ -30,17 +22,17 @@
       text-decoration: none;
       box-shadow: 0 5px 20px rgba(0, 123, 255, 0.5);
       transition: all 0.3s ease;
-      animation: glow 1.5s infinite alternate, moveUpDown 2s infinite ease-in-out; /* じんわり光りながら上下に動く */
+      animation: glow 1.5s infinite alternate; /* じんわり光る範囲を大きく */
     }
 
     .cta-button:hover {
       transform: scale(1.1);
-      box-shadow: 0 10px 60px rgba(0, 123, 255, 1);
+      box-shadow: 0 10px 60px rgba(0, 123, 255, 1); /* ホバー時さらに光る */
       background: linear-gradient(45deg, #0056b3, #004494);
     }
   </style>
 </head>
 <body>
-  <a href="https://sites.google.com/view/tatenosky-pta/vol4/report1" class="cta-button" target="_blank">📖 詳しい授業レポートはこちら＞＞</a>
+  <a href="https://sites.google.com/view/tatenosky-pta/vol4/report2" class="cta-button" target="_blank">📖 詳しい授業レポートはこちら＞＞</a>
 </body>
 </html>
