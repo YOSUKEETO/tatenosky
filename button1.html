@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>スマホでも動くボタン</title>
+  <title>スマホでも目立つボタン</title>
   <style>
     @keyframes glow {
-      0% { box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); }
-      50% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.6); }
-      100% { box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); }
+      0% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.4); }
+      50% { box-shadow: 0 0 50px rgba(0, 123, 255, 0.9); } /* 光る範囲を大きく */
+      100% { box-shadow: 0 0 20px rgba(0, 123, 255, 0.4); }
     }
 
     .cta-button {
@@ -20,15 +20,15 @@
       background: linear-gradient(45deg, #007bff, #0056b3); /* 青系グラデーション */
       border-radius: 50px;
       text-decoration: none;
-      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+      box-shadow: 0 5px 20px rgba(0, 123, 255, 0.5);
       transition: all 0.3s ease;
-      animation: glow 2s infinite alternate; /* じんわり光る */
+      animation: glow 1.5s infinite alternate; /* じんわり光る範囲を大きく */
     }
 
     .cta-button:hover {
       transform: scale(1.1);
-      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.8);
-      background: linear-gradient(45deg, #0056b3, #004494); /* ホバー時の色 */
+      box-shadow: 0 10px 60px rgba(0, 123, 255, 1); /* ホバー時さらに光る */
+      background: linear-gradient(45deg, #0056b3, #004494);
     }
   </style>
 </head>
